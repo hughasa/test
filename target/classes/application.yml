@@ -1,0 +1,13 @@
+server:
+    port: 60011
+spring:
+    application:
+        name: chatGpt
+    cloud:
+        nacos:
+            discovery:
+                enabled: true
+                server-addr: 127.0.0.1:8848
+
+chatGpt:
+    apiKey: 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
