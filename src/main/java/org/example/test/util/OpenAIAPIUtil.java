@@ -15,8 +15,10 @@ import java.util.Scanner;
 public class OpenAIAPIUtil {
 
     public static String sendChatGPTRequest(String apiKey, String prompt) throws Exception {
-        //String apiUrl = "https://api.openai.com/v1/chat/completions";
-        String apiUrl = "https://test-chi-beige.vercel.app/proxy/api.openai.com/v1/chat/completions";
+        System.setProperty("proxyHost", "127.0.0.1");
+        System.setProperty("proxyPort", "17890");
+        String apiUrl = "https://api.openai.com/v1/chat/completions";
+        //String apiUrl = "https://test-chi-beige.vercel.app/proxy/api.openai.com/v1/chat/completions";
         URL url = new URL(apiUrl);
 
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();

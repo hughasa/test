@@ -11,7 +11,6 @@ public class ChatGptServiceImpl implements IChatGptService {
     String apiKey;
     @Override
     public String test(String prompt) throws Exception {
-        String response = OpenAIAPIUtil.sendChatGPTRequest(apiKey, prompt);
-        return response;
+        return OpenAIAPIUtil.sendChatGPTRequest(apiKey, prompt);
     }
 }
