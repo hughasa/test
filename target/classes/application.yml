@@ -10,4 +10,4 @@ spring:
                 server-addr: 127.0.0.1:8848
 
 chatGpt:
-    apiKey: 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
+    apiKey: your api key
